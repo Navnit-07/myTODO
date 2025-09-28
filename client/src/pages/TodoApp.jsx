@@ -203,7 +203,7 @@ const Todo = () => {
           <div className="flex gap-3 mt-4">
             <button
               type="submit"
-              className={`flex-1 text-white px-4 py-3 rounded-lg font-semibold shadow-md transition duration-200 ${
+              className={`flex-1 text-white px-4 py-3 rounded-lg font-semibold shadow-md transition duration-200 cursor-pointer ${
                 editingId
                   ? "bg-indigo-600 hover:bg-indigo-700"
                   : "bg-green-500 hover:bg-green-600"
@@ -216,7 +216,7 @@ const Todo = () => {
               <button
                 type="button"
                 onClick={resetForm}
-                className="bg-gray-300 text-gray-800 px-4 py-3 rounded-lg font-semibold shadow-md hover:bg-gray-400 transition"
+                className="bg-gray-300 text-gray-800 px-4 py-3 rounded-lg font-semibold shadow-md hover:bg-gray-400 transition cursor-pointer"
               >
                 Cancel Edit
               </button>
@@ -271,7 +271,7 @@ const Todo = () => {
                   <div className="flex gap-1 shrink-0">
                     <button
                       onClick={() => startEdit(todo)}
-                      className="p-2 rounded-full text-indigo-500 hover:bg-indigo-100 transition"
+                      className="p-2 rounded-full text-indigo-500 hover:bg-indigo-100 transition cursor-pointer"
                       title="Edit Todo"
                     >
                       <svg
@@ -291,7 +291,7 @@ const Todo = () => {
                     </button>
                     <button
                       onClick={() => deleteTodo(todo._id)}
-                      className="p-2 rounded-full text-red-500 hover:bg-red-100 transition"
+                      className="p-2 rounded-full text-red-500 hover:bg-red-100 transition cursor-pointer"
                       title="Delete Todo"
                     >
                       <svg
