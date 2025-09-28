@@ -10,7 +10,7 @@ const todoRoutes = require("./routes/todo.routes");
 const app = express();
 
 const PORT = process.env.PORT || 5000;
-const allowedOrigins = ['http://localhost:5173']
+const allowedOrigins = ['https://my-todo-five-lilac.vercel.app']
 
 app.use(cors({
     origin: function (origin, callback) {
